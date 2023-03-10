@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './header.scss'
 import { BsSun, BsMoon } from 'react-icons/bs'
+import { FcPhotoReel } from 'react-icons/fc'
+
 
 const getStorageTheme = () => {
     let theme = "light-theme"
@@ -34,7 +36,7 @@ export default function Header() {
     <header className="header">
         <nav className="nav container">
             <a href="#" className="nav__logo">
-                <img src="src/img/logo.png" alt="logo" className="nav__logo-icon" />
+                <FcPhotoReel className="nav__logo-icon"/>
                 <span className="nav__logo-name">Yana</span>
             </a>
             <div className="nav__items">
