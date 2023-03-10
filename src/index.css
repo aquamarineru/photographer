@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Tomatoes";
+  src: url("./fonts/Tomatoes.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Ricordi";
+  src: url("./fonts/tt_ricordi.otf") format("opentype");
+}
+
+/* Variables */
+:root{
+  --primary-color: #d63333;
+  --primary-color-light: rgba(214, 51, 51, .7);
+  --secondary-color: #1a1b1c;
+  --white-color: #fff;
+  --black-color: #000;
+  --body-color: #272727;
+  --title-font: 'EB Garamond', serif;
+  --body-font: 'TT Ricordi', serif;
+  --primary-font: 'Tomatoes', cursive;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  background-color: var(--body-color);
+}
+ol,
+ul {
+  list-style: none;
+} 
+
+html {
+  scroll-behavior: smooth;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.section {
+  padding: 6rem 0 2rem;
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+}
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}

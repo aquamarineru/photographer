@@ -1,0 +1,38 @@
+.home {
+    background-color: var(--black-color);
+    width: 100%;
+    height: 100%;
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+    }
+    &__title {
+        color: var(--primary-color);
+        font-family: var(--primary-font);
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 2;
+        letter-spacing: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+        z-index: 10;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: rotate(-10deg) translate(-40%, -20%);
+    }
+    &__description{
+        color: var(--white-color);
+        font-family: var(--title-font);
+        font-size: 1.4rem;
+        line-height: 1.5;
+        font-weight: 400;
+        position: absolute;
+        bottom: -3rem;
+        width: 250px;
+
+    }
+}
