@@ -12,6 +12,7 @@
   --primary-color: #d63333;
   --primary-color-light: rgba(214, 51, 51, .7);
   --secondary-color: #1a1b1c;
+  --secondary--color-light: rgba(26, 27, 28, .6);
   --white-color: #fff;
   --black-color: #000;
   --body-color: #272727;
@@ -72,4 +73,39 @@ img {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+/* Breakpoints */
+/*For large screens*/
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 968px;
+    margin-left: 5.5rem;
+    margin-right: 4.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 900px;
+    margin-left: 4.5rem;
+    margin-right: 3.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 650px;
+    margin-left: 3.5rem;
+    margin-right: 2.5rem;
+  }
+  .section {
+    padding: 2rem 0 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  
 }

@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react'
 import './header.scss'
 import { BsSun, BsMoon } from 'react-icons/bs'
 import { FcPhotoReel } from 'react-icons/fc'
+import { CiMenuBurger } from 'react-icons/ci'
+import { IoMdClose } from 'react-icons/io'
+import Social from './Social'
 
 
 const getStorageTheme = () => {
@@ -55,6 +58,11 @@ export default function Header() {
                         <a href="#contact" className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"} onClick={() => setActiveNav('#contact')}>Contact</a>
                     </li>
                 </ul>
+                <IoMdClose className="nav__close" id="nav-close" onClick={() => setNavOpen(!navOpen)}/>
+                <Social className="nav__social" />
+            </div>
+            <div className="nav__toggle" onClick={() => setNavOpen(!navOpen)}>
+                <CiMenuBurger className="nav__toggle-icon" id="nav-toggle"/>
             </div>
             <div className="nav__btns">
                     <div className="theme__toggler" onClick={themeToggler}>
