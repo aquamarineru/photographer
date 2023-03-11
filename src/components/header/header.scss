@@ -124,7 +124,7 @@
             //padding: 5rem 5.25rem 0 9rem;
             margin: auto;
             background-color: var(--secondary-color);
-            transition: all .6s ease;
+            transition: all .3s;
 
         }
         &__items {
@@ -144,7 +144,7 @@
         &__close {
             position: absolute;
             //right: 1rem;
-            top: 2rem;
+            top: 1rem;
             font-size: 1.5rem;
             cursor: pointer;
             left: 20rem;
@@ -194,18 +194,13 @@
     .show-menu {
         left: 0;
     }
-    .nav {
-        &__close {
-            left: 20rem;
-        }
-    }
     
 }
     
 @media screen and (max-width: 375px) {
     .nav {
         &__close {
-            left: 15rem;
+            left: 70%;
         }
     }
 }
